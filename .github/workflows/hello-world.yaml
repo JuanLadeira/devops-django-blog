@@ -1,0 +1,14 @@
+name: Hello-world 
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_django_project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: run hello world
+        uses: |
+          echo "hello world"
