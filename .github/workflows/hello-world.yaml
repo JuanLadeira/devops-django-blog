@@ -14,6 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: run hello world
-        uses: |
+        run: |
           echo "hello world"
           echo "${{ env.DJANGO_SECRET_KEY }}"
