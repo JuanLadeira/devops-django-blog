@@ -11,7 +11,7 @@ jobs:
     secrets:
       DJANGO_SECRET_KEY: "${{ secrets.DJANGO_SECRET_KEY }}"
   test_django_mysql:
-    uses: ./.github/workflows/test-django.mysql.yaml
+    uses: ./.github/workflows/test-django-mysql.yaml
     secrets:
       DJANGO_SECRET_KEY: "${{ secrets.DJANGO_SECRET_KEY }}"
 
