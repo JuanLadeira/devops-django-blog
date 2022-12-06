@@ -10,4 +10,9 @@ jobs:
     uses: ./.github/workflows/hello-world.yaml
     secrets:
       DJANGO_SECRET_KEY: "${{ secrets.DJANGO_SECRET_KEY }}"
+  test_django_mysql:
+    uses: ./.github/workflows/test-django.mysql.yaml
+    secrets:
+      DJANGO_SECRET_KEY: "${{ secrets.DJANGO_SECRET_KEY }}"
+
   
