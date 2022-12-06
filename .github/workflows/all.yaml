@@ -8,4 +8,6 @@ on:
 jobs:
   test_django:
     uses: ./.github/workflows/hello-world.yaml
+    secrets:
+      DJANGO_SECRET_KEY: "${{ secrets.DJANGO_SECRET_KEY }}"
   

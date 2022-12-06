@@ -1,7 +1,10 @@
 name: Hello-world 
 
 on:
-  workflow_call:
+  workflow_call:  
+    secrets:
+      DJANGO_SECRET_KEY:
+        required: true
   
   workflow_dispatch:
 
