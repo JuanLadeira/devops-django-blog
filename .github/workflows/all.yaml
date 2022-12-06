@@ -1,0 +1,11 @@
+name: 0 - Run everything
+
+on:
+  workflow_dispath:
+  push:
+    branches: [main]
+
+jobs:
+  test_django:
+    uses: ./.github/workflows/hello-world.yaml
+  
