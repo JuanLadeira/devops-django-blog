@@ -2,6 +2,9 @@ name: 2 - build app container image
 
 on: 
   workflow_call:
+    secrets:
+        DJANGO_SECRET_KEY:
+          required: true
   workflow_dispatch:
 
 
