@@ -19,7 +19,7 @@ RUN python3 -m venv /opt/venv
 # requirements.txt must have gunicorn & django
 RUN /opt/venv/bin/python3.10 -m pip install pip --upgrade && \
     /opt/venv/bin/python3.10 -m pip install -r requirements.txt && \
-    # /opt/venv/bin/python3.10 -m pip install mysqlclient && \
+    /opt/venv/bin/python3.10 -m pip install mysqlclient && \
     # /opt/venv/bin/pip install mysqlclient && \
     chmod +x config/entrypoint.sh
 

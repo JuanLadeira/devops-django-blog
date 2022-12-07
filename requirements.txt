@@ -11,7 +11,7 @@ pillow
 boto3
 django-storages
 ## for mysql databases
-mysqlclient 
+#mysqlclient 
 
 ## uncomment for postgresql databases
 # psycopg2
